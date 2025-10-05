@@ -1,57 +1,59 @@
 # Maze-Following Robot Using Search Algorithms
 [![View Presentation](https://img.shields.io/badge/Prezi_Presentation-Click_to_View-blue?style=flat-square&logo=prezi)](https://prezi.com/view/wHjIw9nZQi5z6kG3UhBq/)
 
-This project presents the design and implementation of an **autonomous maze-following robot** that combines **PID control** with **search algorithms (BFS and DFS)** for intelligent path planning and navigation.  
-The system was implemented in Python and MATLAB, integrating control theory with algorithmic decision-making to achieve stable and efficient movement through a maze.
+This project demonstrates the design and simulation of an **autonomous maze-following robot** implemented in the **Webots simulation environment**.  
+The robot combines **PID control** with **graph-based search algorithms (BFS and DFS)** to explore and solve maze structures intelligently.  
+The control logic and algorithms were developed in **Python**, integrating motion control with real-time decision-making for stable and efficient navigation.
 
 ---
 
 ## 📘 Project Overview
 
-The goal of this project is to develop a robot capable of exploring and solving a maze using both **feedback control** and **graph-based search algorithms**.  
-The robot uses a **PID controller** for real-time motion correction and a **BFS/DFS-based path planner** to determine the optimal or complete traversal path.
+The main goal of this project is to create a robot capable of autonomously exploring and navigating through a maze.  
+Using **PID feedback control**, the robot maintains stable motion and precise turns, while **BFS** and **DFS** algorithms are used for **pathfinding** and **exploration**.
 
-The system was tested in a simulated environment, combining control dynamics and logical pathfinding for smooth and efficient navigation.
+The entire system was modeled and tested in **Webots**, where we simulated both the robot’s kinematics and its decision-making process under realistic conditions.
 
 ---
 
 ## ⚙️ Key Features
 
 - **PID Control for Motion Stability:**  
-  A discrete-time PID controller ensures smooth speed and heading control, correcting errors in real time.
+  A discrete-time PID controller regulates the robot’s wheel speeds and orientation, ensuring smooth and accurate movements.
 
 - **BFS & DFS Path Planning:**  
-  Implemented Breadth-First Search (BFS) and Depth-First Search (DFS) algorithms for maze exploration and optimal route generation.
+  Implemented Breadth-First Search (BFS) and Depth-First Search (DFS) algorithms for intelligent maze traversal and route generation.
+
+- **Webots Simulation:**  
+  The complete robot model, environment, and control loop were built and tested in Webots for realistic visualization and debugging.
 
 - **Autonomous Navigation:**  
-  The robot makes local and global navigation decisions based on environmental feedback and precomputed paths.
-
-- **Simulation and Analysis:**  
-  Full simulation and control loop validation were performed in Python and MATLAB.
+  The robot combines control and logic layers, making local and global navigation decisions without human intervention.
 
 ---
 
 ## 🧩 System Components
 
-- **`PID.py`:** Implements the discrete PID controller used for velocity and orientation control.  
-- **`Maze_controller.py`:** Contains the main maze-solving logic using BFS and DFS algorithms.  
-- **`Location.py`:** Tracks the robot’s position, heading, and updates during movement.  
+- **`PID.py`:** Discrete PID controller implementation for real-time wheel control.  
+- **`Maze_controller.py`:** Contains the BFS/DFS algorithms and decision-making logic for maze traversal.  
+- **`Location.py`:** Tracks the robot’s position and updates during motion using Webots sensors and simulation feedback.  
+- **`Report.pdf`:** Full documentation and performance analysis of the robot and algorithms.
 
 ---
 
 ## 📊 Simulation and Results
 
-The robot successfully navigated multiple maze layouts using a combination of control and search strategies.  
-PID control maintained stable motion, while BFS and DFS efficiently mapped and solved the maze.
+The robot was successfully tested in Webots under different maze configurations.  
+PID control provided stability during motion, and BFS/DFS algorithms ensured complete and efficient maze coverage.
 
-Key observations:
-- Smooth and stable motion under digital control.  
-- Successful maze solving using BFS and DFS.  
-- Robust performance under turns, dead-ends, and path changes.
+**Key Results:**
+- Smooth and stable robot motion using PID feedback.  
+- Successful maze-solving using BFS and DFS algorithms.  
+- Accurate wall-following and recovery from dead-ends.  
 
 ### 🔹 Maze Simulation
 ![Maze Simulation](docs/figures/maze.png)
-*Simulation of the robot navigating through the maze environment using PID and BFS/DFS algorithms.*
+*Simulation of the maze-following robot in Webots using PID and search algorithms.*
 
 ---
 
