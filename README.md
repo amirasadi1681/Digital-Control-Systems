@@ -50,7 +50,7 @@ Key observations:
 - Robust performance under turns, dead-ends, and path changes.
 
 ### 🔹 Maze Simulation
-![Maze Simulation](docs/figures/maze_sim.png)
+![Maze Simulation](docs/figures/maze.png)
 *Simulation of the robot navigating through the maze environment using PID and BFS/DFS algorithms.*
 
 ---
