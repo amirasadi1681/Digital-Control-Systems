@@ -51,6 +51,7 @@ PID control provided stability during motion, and BFS/DFS algorithms ensured com
 
 ### 🔹 Maze Simulation
 ![Maze Simulation](docs/figures/maze.png)
+
 *Simulation of the maze-following robot in Webots using PID and search algorithms.*
 
 ---
