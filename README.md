@@ -37,8 +37,6 @@ The entire system was modeled and tested in **Webots**, where we simulated both 
 - **`PID.py`:** Discrete PID controller implementation for real-time wheel control.  
 - **`Maze_controller.py`:** Contains the BFS/DFS algorithms and decision-making logic for maze traversal.  
 - **`Location.py`:** Tracks the robot’s position and updates during motion using Webots sensors and simulation feedback.  
-- **`Report.pdf`:** Full documentation and performance analysis of the robot and algorithms.
-
 ---
 
 ## 📊 Simulation and Results
